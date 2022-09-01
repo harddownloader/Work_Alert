@@ -9,7 +9,7 @@ export const Input = ({ placeholder }: InputProps) => {
   return (
     <input
       type="text"
-      className={"w-full bg-transparent text-base text-main-3 rounded border border-main-2 p-4"}
+      className={"w-full font-normal bg-transparent text-base text-main-3 rounded border border-main-2 p-4"}
       placeholder={placeholder}
     />
   );

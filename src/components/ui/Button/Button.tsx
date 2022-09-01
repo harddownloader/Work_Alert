@@ -7,7 +7,7 @@ export interface ButtonProps {
 
 export const Button = ({ text, isPrimary }: ButtonProps) => {
   return (
-    <button className={`text-base text-main-3 rounded p-4 ${ isPrimary ? 'bg-brand' : 'bg-main-1' } uppercase`}>{ text }</button>
+    <button className={`text-base font-medium text-main-3 rounded p-4 ${ isPrimary ? 'bg-brand' : 'bg-main-1' } uppercase`}>{ text }</button>
   );
 };
 
