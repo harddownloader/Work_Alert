@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Header } from "./components/Header";
+import { Heading } from "./components/ui/Heading";
+import { Input } from "./components/ui/Input";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full bg-main min-h-screen">
+      <Header />
+      <div className="w-full p-8">
+        <Heading text={"log in"} />
+      </div>
+      <div className="w-full p-8">
+        <div className="w-full mb-4">
+          <Input placeholder={"Email Address"} />
+        </div>
+        <div className="w-full mb-4">
+          <Input placeholder={"Password"} />
+        </div>
+      </div>
     </div>
   );
 }
